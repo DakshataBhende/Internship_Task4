@@ -19,7 +19,7 @@
 ### Step 2: Block Inbound Traffic on Port 23 (Telnet)
 1. Click **Inbound Rules** → **New Rule**
 2. Select **Port**, click **Next**
-![Screenshot 2025-06-29 180315](https://github.com/user-attachments/assets/560fd565-25df-48fd-9a83-d7eda13ddcb8)
+![image](https://github.com/user-attachments/assets/704e200c-e74b-48de-af8b-e2a417b15c33)
 3. Choose **TCP**, enter port `23`, click **Next**
 4. Choose **Block the connection**, click **Next**
 5. Select all profiles (Domain, Private, Public), click **Next**

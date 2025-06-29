@@ -39,7 +39,7 @@
    ```cmd
    dism /online /Enable-Feature /FeatureName:TelnetClient
 ![Screenshot 2025-06-29 181610](https://github.com/user-attachments/assets/7503bd8c-8448-4104-bdb4-20b3ad0b4593)
-   ```
+---
 ### Step 5: Test Port 23 Block
 Run this in Command Prompt:
 ```cmd
@@ -49,7 +49,7 @@ If firewall is correctly blocking the port:
 - Connection fails or times out
 - No Telnet banner or prompt appears
 ![Screenshot 2025-06-29 182022](https://github.com/user-attachments/assets/27c4e4f0-e0f6-42bd-83c3-ef40f350ba2e)
-
+---
 ### Step 6: Disable Telnet After Testing (Optional)
 ```cmd
 dism /online /Disable-Feature /FeatureName:TelnetClient

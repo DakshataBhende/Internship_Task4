@@ -19,17 +19,17 @@
 ### Step 2: Block Inbound Traffic on Port 23 (Telnet)
 1. Click **Inbound Rules** → **New Rule**
 2. Select **Port**, click **Next**
+![Screenshot 2025-06-29 180315](https://github.com/user-attachments/assets/560fd565-25df-48fd-9a83-d7eda13ddcb8)
 3. Choose **TCP**, enter port `23`, click **Next**
 4. Choose **Block the connection**, click **Next**
 5. Select all profiles (Domain, Private, Public), click **Next**
 6. Name the rule **"Block Telnet Port 23"** → click **Finish**
-![Screenshot 2025-06-29 180317](https://github.com/user-attachments/assets/4bba375f-c9e1-4258-a001-aed7053e17b1)
+![Screenshot 2025-06-29 180937](https://github.com/user-attachments/assets/12d1e12b-d497-4d7d-8aa9-131e9a700647)
 ---
 ### Step 3 (Optional): Create a Rule to Allow Port 22 (SSH)
 - Repeat the above steps using port **22**
 - Choose **Allow the connection**
 - Name the rule: `Allow SSH (Port 22)`
-![Screenshot 2025-06-29 180317](https://github.com/user-attachments/assets/5668f06e-f6b8-4b80-bc53-8b45a1ed1a1e)
 ---
 ## Testing the Rule
 
@@ -38,6 +38,7 @@
 2. Run:
    ```cmd
    dism /online /Enable-Feature /FeatureName:TelnetClient
+![Screenshot 2025-06-29 181610](https://github.com/user-attachments/assets/7503bd8c-8448-4104-bdb4-20b3ad0b4593)
    ```
 ### Step 5: Test Port 23 Block
 Run this in Command Prompt:
@@ -47,6 +48,7 @@ telnet localhost 23
 If firewall is correctly blocking the port:
 - Connection fails or times out
 - No Telnet banner or prompt appears
+![Screenshot 2025-06-29 182022](https://github.com/user-attachments/assets/27c4e4f0-e0f6-42bd-83c3-ef40f350ba2e)
 
 ### Step 6: Disable Telnet After Testing (Optional)
 ```cmd

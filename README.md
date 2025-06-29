@@ -54,7 +54,7 @@ If firewall is correctly blocking the port:
 ```cmd
 dism /online /Disable-Feature /FeatureName:TelnetClient
 ```
-
+---
 ## What I Learned
 - Hands-on experience with Windows firewall rule creation
 - Understanding of port-specific traffic blocking
